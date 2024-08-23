@@ -8,6 +8,11 @@ import {
   LatestInvoicesSkeleton,
   RevenueChartSkeleton,
 } from "@/app/ui/skeletons";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "dashboard home page",
+};
 
 const CardSkeletonWrapper = () =>
   [1, 2, 3, 4]?.map((key) => <CardSkeleton key={key} />);
